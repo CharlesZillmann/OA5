@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ArchitectureStandard" representedClassName="ArchitectureStandard" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="None" syncable="YES"/>
+        <relationship name="astod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deployment" inverseName="dtoas" inverseEntity="Deployment" syncable="YES"/>
+    </entity>
+    <entity name="BuildTask" representedClassName="BuildTask" parentEntity="Deployment" syncable="YES" codeGenerationType="class">
+        <attribute name="lastfailederrormessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastperformed" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bttod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deployment" inverseName="dtobt" inverseEntity="Deployment" syncable="YES"/>
+        <relationship name="bttombt" maxCount="1" deletionRule="Nullify" destinationEntity="MasterBuildTask" inverseName="mbttobt" inverseEntity="MasterBuildTask" syncable="YES"/>
+    </entity>
+    <entity name="Deployment" representedClassName="Deployment" syncable="YES" codeGenerationType="class">
+        <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="modified" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="New Deployment" syncable="YES"/>
+        <relationship name="dtoas" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArchitectureStandard" inverseName="astod" inverseEntity="ArchitectureStandard" syncable="YES"/>
+        <relationship name="dtobt" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BuildTask" inverseName="bttod" inverseEntity="BuildTask" syncable="YES"/>
+        <relationship name="dtonc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NamingConvention" inverseName="nctod" inverseEntity="NamingConvention" syncable="YES"/>
+    </entity>
+    <entity name="MasterBuildTask" representedClassName="MasterBuildTask" syncable="YES" codeGenerationType="class">
+        <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="modified" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="None" syncable="YES"/>
+        <attribute name="templatefile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="templatefiletext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="1" syncable="YES"/>
+        <relationship name="mbttobt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BuildTask" inverseName="bttombt" inverseEntity="BuildTask" syncable="YES"/>
+    </entity>
+    <entity name="NamingConvention" representedClassName="NamingConvention" syncable="YES" codeGenerationType="class">
+        <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="modified" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" maxValueString="100" syncable="YES"/>
+        <attribute name="templatefile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="templatefiletext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="1" syncable="YES"/>
+        <relationship name="nctod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Deployment" inverseName="dtonc" inverseEntity="Deployment" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" minValueString="4" maxValueString="100" defaultValueString="admin" syncable="YES"/>
+        <attribute name="password" attributeType="String" minValueString="1" maxValueString="100" defaultValueString="password" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchDeployments" entity="Deployment"/>
+    <elements>
+        <element name="ArchitectureStandard" positionX="342" positionY="-414" width="128" height="73"/>
+        <element name="BuildTask" positionX="-45" positionY="-414" width="128" height="118"/>
+        <element name="Deployment" positionX="144" positionY="-442" width="128" height="133"/>
+        <element name="MasterBuildTask" positionX="-218" positionY="-382" width="128" height="148"/>
+        <element name="NamingConvention" positionX="342" positionY="-321" width="128" height="148"/>
+        <element name="Users" positionX="-207" positionY="-570" width="128" height="75"/>
+    </elements>
+</model>
