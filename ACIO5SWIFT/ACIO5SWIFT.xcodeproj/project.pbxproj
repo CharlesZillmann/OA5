@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A153BB91F85347400D0A280 /* clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB01F85347300D0A280 /* clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg */; };
-		5A153BBA1F85347400D0A280 /* metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB11F85347300D0A280 /* metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg */; };
-		5A153BBB1F85347400D0A280 /* mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB21F85347300D0A280 /* mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg */; };
-		5A153BBC1F85347400D0A280 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB31F85347300D0A280 /* download.jpeg */; };
-		5A153BBD1F85347400D0A280 /* steampunk-gold-16010489.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB41F85347300D0A280 /* steampunk-gold-16010489.jpg */; };
-		5A153BBE1F85347400D0A280 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB51F85347400D0A280 /* frame.png */; };
-		5A153BBF1F85347400D0A280 /* steampunk_border_by_traumfaengerin_wish-d4wzu8z.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB61F85347400D0A280 /* steampunk_border_by_traumfaengerin_wish-d4wzu8z.png */; };
-		5A153BC01F85347400D0A280 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB71F85347400D0A280 /* images.jpeg */; };
-		5A153BC11F85347400D0A280 /* imagesr.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A153BB81F85347400D0A280 /* imagesr.png */; };
 		5AA9A4791F84090300ABE3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9A4781F84090300ABE3AF /* AppDelegate.swift */; };
 		5AA9A47B1F84090300ABE3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9A47A1F84090300ABE3AF /* ViewController.swift */; };
 		5AA9A47E1F84090300ABE3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA9A47C1F84090300ABE3AF /* Main.storyboard */; };
@@ -49,15 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A153BB01F85347300D0A280 /* clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg"; sourceTree = "<group>"; };
-		5A153BB11F85347300D0A280 /* metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg"; sourceTree = "<group>"; };
-		5A153BB21F85347300D0A280 /* mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg"; sourceTree = "<group>"; };
-		5A153BB31F85347300D0A280 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = download.jpeg; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/download.jpeg"; sourceTree = "<group>"; };
-		5A153BB41F85347300D0A280 /* steampunk-gold-16010489.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "steampunk-gold-16010489.jpg"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/steampunk-gold-16010489.jpg"; sourceTree = "<group>"; };
-		5A153BB51F85347400D0A280 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame.png; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/frame.png"; sourceTree = "<group>"; };
-		5A153BB61F85347400D0A280 /* steampunk_border_by_traumfaengerin_wish-d4wzu8z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "steampunk_border_by_traumfaengerin_wish-d4wzu8z.png"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/steampunk_border_by_traumfaengerin_wish-d4wzu8z.png"; sourceTree = "<group>"; };
-		5A153BB71F85347400D0A280 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/images.jpeg"; sourceTree = "<group>"; };
-		5A153BB81F85347400D0A280 /* imagesr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imagesr.png; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/imagesr.png"; sourceTree = "<group>"; };
 		5AA9A4751F84090300ABE3AF /* ACIO5SWIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACIO5SWIFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA9A4781F84090300ABE3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AA9A47A1F84090300ABE3AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,22 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A153BAF1F85345500D0A280 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				5A153BB01F85347300D0A280 /* clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg */,
-				5A153BB31F85347300D0A280 /* download.jpeg */,
-				5A153BB51F85347400D0A280 /* frame.png */,
-				5A153BB71F85347400D0A280 /* images.jpeg */,
-				5A153BB81F85347400D0A280 /* imagesr.png */,
-				5A153BB21F85347300D0A280 /* mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg */,
-				5A153BB11F85347300D0A280 /* metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg */,
-				5A153BB61F85347400D0A280 /* steampunk_border_by_traumfaengerin_wish-d4wzu8z.png */,
-				5A153BB41F85347300D0A280 /* steampunk-gold-16010489.jpg */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		5AA9A46C1F84090300ABE3AF = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +109,6 @@
 		5AA9A4771F84090300ABE3AF /* ACIO5SWIFT */ = {
 			isa = PBXGroup;
 			children = (
-				5A153BAF1F85345500D0A280 /* Images */,
 				5AA9A4AF1F84126600ABE3AF /* ACIDeploymentsTableViewController.swift */,
 				5AA9A4781F84090300ABE3AF /* AppDelegate.swift */,
 				5AA9A47A1F84090300ABE3AF /* ViewController.swift */,
@@ -286,17 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA9A4861F84090300ABE3AF /* LaunchScreen.storyboard in Resources */,
-				5A153BBF1F85347400D0A280 /* steampunk_border_by_traumfaengerin_wish-d4wzu8z.png in Resources */,
-				5A153BC11F85347400D0A280 /* imagesr.png in Resources */,
-				5A153BBB1F85347400D0A280 /* mechanism-stylized-mechanical-steampunk-collage-made-metal-frame-clockwork-details-59067636.jpg in Resources */,
-				5A153BBC1F85347400D0A280 /* download.jpeg in Resources */,
-				5A153BB91F85347400D0A280 /* clockwork-mechanism-collage-copper-background-made-metal-gears-brass-plate-73725534.jpg in Resources */,
-				5A153BBA1F85347400D0A280 /* metal-frame-clockwork-details-made-mechanical-steampunk-collage-61079052.jpg in Resources */,
-				5A153BBE1F85347400D0A280 /* frame.png in Resources */,
-				5A153BC01F85347400D0A280 /* images.jpeg in Resources */,
 				5AA9A4831F84090300ABE3AF /* Assets.xcassets in Resources */,
 				5AA9A47E1F84090300ABE3AF /* Main.storyboard in Resources */,
-				5A153BBD1F85347400D0A280 /* steampunk-gold-16010489.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
