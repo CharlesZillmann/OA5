@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreData
+import Eureka
 
 //**********************************************************************************************
 //**********************************************************************************************
@@ -515,4 +516,67 @@ class MasterBuildTaskViewController : UIViewController, NSFetchedResultsControll
 
 }
 
+//**********************************************************************************************
+//**********************************************************************************************
+//***** MasterBuildTask
+//**********************************************************************************************
+//**********************************************************************************************
+
+//*****************************************************
+//***** class MasterBuildTaskViewController
+//*****************************************************
+class MasterBuildTaskViewController : UIViewController, NSFetchedResultsControllerDelegate {
+    var myManagedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    //var myMasterBuildTask : MasterBuildTask!
+    var myMasterBuildTask: MasterBuildTask? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
+    
+    @IBOutlet weak var nametextfield: UITextField!
+    @IBOutlet weak var desctextentry: UITextField!
+    @IBOutlet weak var vertextentry: UITextField!
+    @IBOutlet weak var temtextentry: UITextView!
+    
+    //***********
+    //***** func configureView
+    //***********
+    func configureView() {
+        if let detail = myMasterBuildTask {
+            nametextfield?.text = detail.name
+            desctextentry?.text = detail.templatefile
+            vertextentry?.text = detail.version
+            temtextentry?.text = detail.templatefiletext
+        }
+    }
+    
+    //***********
+    //***** override func viewDidLoad
+    //***********
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationItem.title = "Master Build Task"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(DoSave))
+        configureView()
+    }
+    
+    //***********
+    //***** @objc func DoSave
+    //***********
+    @objc func DoSave(_ sender: Any) {
+        let myMasterBuildTask = MasterBuildTask(context: myManagedObjectContext) // Link Task & Context
+        myMasterBuildTask.name = nametextfield.text
+        myMasterBuildTask.modified = NSDate() as Date
+        myMasterBuildTask.templatefile = desctextentry.text
+        myMasterBuildTask.templatefiletext = temtextentry.text
+        myMasterBuildTask.version = vertextentry.text
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        //self.dismiss(animated: false, completion: nil)
+    }
+    
+}
 

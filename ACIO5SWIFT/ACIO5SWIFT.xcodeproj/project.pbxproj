@@ -20,6 +20,7 @@
 		5AA9A4B01F84126600ABE3AF /* ACIDeploymentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9A4AF1F84126600ABE3AF /* ACIDeploymentsTableViewController.swift */; };
 		5AA9A4B21F842FF500ABE3AF /* BuildTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9A4B11F842FF500ABE3AF /* BuildTasksTableViewController.swift */; };
 		5AB447531F86E5B50040A8C6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB447521F86E5B50040A8C6 /* SettingsViewController.swift */; };
+		5AB716591F914CA10015FA16 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AB716581F914CA00015FA16 /* Eureka.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5AA9A4AF1F84126600ABE3AF /* ACIDeploymentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACIDeploymentsTableViewController.swift; sourceTree = "<group>"; };
 		5AA9A4B11F842FF500ABE3AF /* BuildTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTasksTableViewController.swift; sourceTree = "<group>"; };
 		5AB447521F86E5B50040A8C6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5AB716581F914CA00015FA16 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = ../../../Desktop/ACIO5SWIFT/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB716591F914CA10015FA16 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 		5AA9A46C1F84090300ABE3AF = {
 			isa = PBXGroup;
 			children = (
+				5AB716581F914CA00015FA16 /* Eureka.framework */,
 				5AA9A4771F84090300ABE3AF /* ACIO5SWIFT */,
 				5AA9A48F1F84090400ABE3AF /* ACIO5SWIFTTests */,
 				5AA9A49A1F84090400ABE3AF /* ACIO5SWIFTUITests */,
